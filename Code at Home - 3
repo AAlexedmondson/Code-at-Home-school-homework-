@@ -1,0 +1,117 @@
+import sys
+ 
+from sys import exit
+ 
+import time
+ 
+from time import sleep
+ 
+def Again():
+ 
+    Again = input("Do you want to do another calculation, y/n : ").lower()
+ 
+    if Again == "y":
+ 
+        StartCalculator()
+ 
+    else:
+ 
+        CloseCalculator()
+ 
+def Multiplication():
+ 
+    y = input("Enter first number: ")
+ 
+    x = input("Enter second number: ")
+ 
+    x = int(x)
+ 
+    y = int(y)
+ 
+    print(x*y)
+ 
+    time.sleep(0.5)
+ 
+    Again()
+ 
+    
+ 
+ 
+ 
+def Addition():
+ 
+    y = input("Enter first number: ")
+ 
+    x = input("Enter second number: ")
+ 
+    x = int(x)
+ 
+    y = int(y)
+ 
+    print(x+y)
+ 
+    time.sleep(0.5)
+ 
+    Again()
+ 
+   
+ 
+def Division():
+ 
+    y = input("Enter first number: ")
+ 
+    x = input("Enter second number (divide by): ")
+ 
+    x = int(x)
+ 
+    y = int(y)
+ 
+    print(y / x)
+ 
+    time.sleep(0.5)
+ 
+    Again()
+ 
+def Subtraction():
+ 
+    y = input("Enter first number: ")
+ 
+    x = input("Enter second number (minus this number): ")
+ 
+    x = int(x)
+ 
+    y = int(y)
+ 
+    print(y-x)
+ 
+    time.sleep(0.5)
+ 
+    Again()
+ 
+def CloseCalculator():
+ 
+    sys.exit()
+ 
+def StartCalculator():
+ 
+    print("Which opperation would you like to do")
+ 
+    Opperation = input("Multiplication, Addition, Division, Subtraction: [or] 1, 2, 3, 4: ").lower()
+ 
+    if Opperation ==  "multiplication": Multiplication()
+ 
+    elif Opperation == "1": Multiplication()
+ 
+    if Opperation ==  "Addition": Addition()
+ 
+    elif Opperation == "2": Addition()
+ 
+    if Opperation ==  "Division": Division()
+ 
+    elif Opperation == "3": Division()
+ 
+    if Opperation ==  "Subtraction": Subtraction()
+ 
+    elif Opperation == "4": Subtraction()
+ 
+StartCalculator()
