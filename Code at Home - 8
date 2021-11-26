@@ -1,0 +1,24 @@
+
+allowed = 0
+disallowed =0
+names = "alex, jeff, cody, bob,"
+rejected = []
+
+while True:
+    namer = input("Try guess a name. To say you are done type 'stop'")
+    if namer in names :
+        print("you are in the club!")
+        allowed = allowed + 1
+    
+    elif namer == "stop":
+        break
+    else:
+        print("you are an imposter, no entry to the club for you!")
+        disallowed = disallowed + 1
+        if namer not in rejected:
+            rejected.append(namer)
+            
+print ("the amount of people in the club is", allowed)
+print ("the amount of people not allowed in the club is", allowed)
+print ("the people turned away are", rejected)
+    
