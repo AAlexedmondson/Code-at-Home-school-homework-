@@ -1,0 +1,18 @@
+nums = []
+while True:
+  enterdnum = int(input("Enter your Number: "))
+  if enterdnum == 0:
+    break
+  nums.append(enterdnum)
+ 
+ print(",,,")
+ print("Loading")
+ print(",,,")
+  
+ print("Mean:")
+ print(sum(nums)/len(nums))
+ print("Total:")
+ print(sum(sums))
+ print("Amount of numbers: ")
+ print(len(nums))
+ 
