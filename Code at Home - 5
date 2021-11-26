@@ -1,0 +1,12 @@
+while True:
+    name = input("put in first name: ")
+    names = input("put in second name: ")
+    print (name*(len(name)))
+    print (names*(len(names)))
+    again = input("do you want to play again y/n: ").lower()
+    if again == "n":
+        print("thank you for playing!")
+        break
+    else:
+        counter = counter +1
+        print ("youve played", counter)
