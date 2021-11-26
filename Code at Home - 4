@@ -1,0 +1,10 @@
+name = input("Write you name here: ")
+print ("The length of your name is",len(name))
+names = input("Write your second name here: ")
+print ("The length of your name is",len(names))
+if len(name) > len(names):
+    print(name,"is greater than",names)
+elif len(names) > len(name):
+    print(names,"is greater than",name)
+else:
+    print ("they are the same")
