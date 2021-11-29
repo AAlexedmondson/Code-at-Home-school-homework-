@@ -1,0 +1,27 @@
+peopleandhobbies = {}
+approved_hobbies = ["skateboarding", "cycling", "saxaphone","football","gaming"]
+max_people = 3
+people_added = 0
+
+while people_added < max_people:
+    try:
+        print("Enter a name :")
+        name = input("> ")
+        hobby = ""
+        while hobby not in approved_hobbies:
+            print("Enter a hobby  in this list:")
+            print(approved_hobbies)
+            hobby = input("> ").lower()
+            if hobby not in approved_hobbies:
+                print("Enter a hobby that is in the list and try again")
+        peopleandhobbies[name] = hobby
+        people_added += 1
+
+    except KeyboardInterrupt:
+        print("Done")
+        break
+if people_added == 6:
+    print("Limit reached!")
+
+for person in peopleandhobbies:
+    print(f"{person} has the hobby of {peopleandhobbies[person]}")
