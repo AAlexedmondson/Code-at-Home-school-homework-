@@ -1,0 +1,8 @@
+evens = 0; odds = 0
+while True:
+    option = input("1-add a number 2-give me the odds and evens 3-quit: ")
+    if option == "1":
+        inputted = int(input("number: "))
+        evens, odds = (evens + 1, odds) if inputted % 2 == 0 else (evens, odds + 1)
+    if option == "3": break
+    if option == "2": print(f"There were {evens} evens and {odds} odds")
