@@ -1,0 +1,26 @@
+nice =[]
+naughty =[]
+present = ['a galxy fold 3 128gb Snapdragon 888 5G', 'a 4k oled 120hz samsung TV', 'to do more coding in computing',
+           'Gigabyte GeForce RTX 3090 VISION OC 24G', 'Senhiesser HD600 300 ohms', 'i9-12900KF Processor (30M Cache 5.20 GHz)',
+           'jujutsu kaisen posters', 'their parents to be proud of them', 'Logitech G pro x superlight', 'Sure sm7b dynamic microphone',
+           'blue compass microphone arm','TC Helicon go XLR Audio interface','Elgato Streamdeck 32 key edition',]
+
+   
+for i in people:
+    desision = random.randint(1,2)
+    if desision == 1:
+        nice.append(i)
+    elif desision == 2:
+        naughty.append(i)
+print( "nice list :", nice)
+print("naughty list :", naughty)import random
+people = ["Jayson", "SamD","Gabriella", "Luca", "SamG", "Connor", "Andrew", "Ben", "Alexandra", "Thomas", "Matthew", "Lewis", "Zac", "Qing", "Isobel", "SamRW" ]
+
+
+
+print(nice)
+print(naughty)
+
+for i in nice:
+    print(i, "wants ...", (random.choice(present)))
+
