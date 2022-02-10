@@ -1,0 +1,35 @@
+from time import sleep
+
+days = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
+
+while True:
+    name = input ("enter your name: ").lower()
+    if len(name) <= 2:
+        print ("YOUR NAME IS TOO SHORT")
+        break
+    if len(name) >= 16:
+        print ("YOUR NAME IS TOO LONG")
+        break
+    age = int(input("enter your age 5-60: "))
+    if (age) <= 5:
+        print ("YOU ARE NOT THE RIGHT AGE TO ENTER ):")
+        break
+    elif (age) >= 60:
+        print ("YOU ARE NOT THE RIGHT AGE TO ENTER ):")
+        break
+
+    favday = input("enter you favorite day of the week: ").lower()
+    if (favday) not in (days):
+        print("PLEASE ENTER IN A REAL DAY")
+        
+    
+    sleep(0.3)
+
+
+    if (name) == "alex" and (age) == 15 and (favday) == "friday":
+        print ("WELCOME TO THE SYSTEM ALEX")
+        sleep(0.3)
+        print('''(╯ ͠° ͟ʖ ͡°)╯┻━┻''')
+        break
+    else:
+        print("YOU ARE WRONG")
