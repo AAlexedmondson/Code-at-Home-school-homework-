@@ -1,0 +1,23 @@
+while True:
+    f = open("epictextfile.txt","w")
+    f.write("""Enter text here""".lower())
+    f.close()
+    f = open("epictextfile.txt","r")
+    alphabet = f.read()
+    alphabet = alphabet.split()
+    inp = input("Enter a word and see if it is in the text> ")
+    found = False
+
+
+    for letter in alphabet:
+      if inp == letter:
+        found = True
+
+    if found == True:
+      print("This is in the text!")
+      break
+    else:
+      print("not in the text, sorry ):")
+
+
+
